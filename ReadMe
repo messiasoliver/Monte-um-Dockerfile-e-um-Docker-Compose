@@ -1,0 +1,13 @@
+# Projeto Docker Wordpress
+
+Este projeto tem como objetivo criar uma instalação do Wordpress com Postgres e Adminer utilizando Docker.
+
+## Requisitos
+
+- Docker
+- Docker Compose
+
+## Como executar
+
+1. Clone este repositório em sua máquina
+
