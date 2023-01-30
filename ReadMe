@@ -9,5 +9,31 @@ Este projeto tem como objetivo criar uma instalação do Wordpress com Postgres 
 
 ## Como executar
 
-1. Clone este repositório em sua máquina
+Clone este repositório em sua máquina
 
+# Projeto Docker Wordpress
+
+Este projeto tem como objetivo criar uma instalação do Wordpress com Postgres e Adminer utilizando Docker.
+
+## Requisitos
+
+- Docker
+- Docker Compose
+
+## Como executar
+
+ Clone este repositório em sua máquina
+https://github.com/messiasoliver/Monte-um-Dockerfile-e-um-Docker-Compose.git
+Entre na pasta do projeto
+cd seu-projeto
+Execute o comando abaixo para subir os containers
+docker-compose up -d
+
+Abra o seu navegador e acesse o endereço http://localhost para acessar o Wordpress
+Para acessar o Adminer, acesse o endereço http://localhost:9000
+Para parar e remover os containers, execute o comando abaixo:
+docker-compose down
+
+## Observações
+- Certifique-se de que as portas 80 e 443 não estejam sendo usadas por outro aplicativo em sua máquina.
+- Os dados do banco de dados 
