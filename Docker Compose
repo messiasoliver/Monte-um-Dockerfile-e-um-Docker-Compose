@@ -1,0 +1,28 @@
+version: '3'
+services:
+  wordpress:
+    build: .
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - wordpress:/var/www/html/wordpress/wp-content
+
+  postgres:
+    image: postgres:latest
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  adminer:
+    image: adminer
+    ports:
+      - 9000:8080
+
+volumes:
+  wordpress:
+  db:
+
+networks:
+  default:
+    internal:
+      name: internal
